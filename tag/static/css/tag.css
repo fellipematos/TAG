@@ -1,0 +1,109 @@
+#tag{
+    height: 560px;
+    width: 400px;
+}
+
+.header{
+    height: 200px;
+    width: 100%;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: gray;
+    text-align: center;
+}
+.header-info{
+    width: 100%;
+}
+p.header-bold{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50%;
+}
+p.header-slim{
+    font-size: 14px;
+    font-weight: 100;
+}
+p.header-txt{
+    font-size: 10px;
+    font-weight: 600;
+    margin: 4px 6px 0px 6px ;
+    border-style: none none dotted none;
+    border-width: 1px;
+}
+
+.content{
+    width: 100%;
+}
+.content-cont{
+    width: 100%;
+}
+.content-columm1{
+    width: 40%;
+}
+.content-columm2{
+    width: 60%;
+}
+.content-title{
+    font-size: large;
+    font-weight: 700;
+    color: White;
+    background-color: black;
+    margin: 0px 0px 0px 0px;
+}
+.content-txt{
+    font-size: 16px;
+    margin: 2px 10px 2px 10px;
+}
+p.content-cep{
+    font-size: 22px;
+    font-weight: 600;
+    align-content: center;
+    margin: 2px 10px 2px 10px;
+}
+p.content-code{
+    font-size: 70px;
+    align-content: center;
+    font-family: 'Libre Barcode 128', cursive;
+    margin: -12px 0px -40px 0px;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.footer-header{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.footer-columm1{
+    width: 30%;
+}
+.footer-columm2{
+    width: 70%;
+}
+.footer-title{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: White;
+    background-color: black;
+    margin: 2px 0px 0px 0px ;
+}
+.footer-name{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 20px;
+    margin: 2px 10px 0px 10px ;
+}
+.footer-txt{
+    font-size: 12px;
+    margin: 2px 10px 0px 10px ;
+}
+.footer-info{
+    font-size: 12px;
+    text-align: center;
+    color: White;
+    background-color: black;
+    margin: 10px 0px 0px 0px;
+}
