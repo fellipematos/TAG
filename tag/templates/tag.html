@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETIQUETA</title>
+{% extends 'layout.html' %}
 
-<!--bootstrap-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-<!--font-google-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
-    
+{% block content %}  
 <table id="tag">
     <tr>
         <td>
@@ -53,16 +38,16 @@
                 <tr>
                     <td>
                         <p class="content-txt"><strong>
-                             result.des_nome 
+                            {{ result.dnome }}
                         </strong></p>
                         <p class="content-txt">
-                             result.des_endereco  -  result.des_num 
+                            {{ result.drua }} - {{ result.dnum }}
                         </p>
                         <p class="content-txt">
-                             result.des_complemento 
+                            {{ result.dcom }}
                         </p>
                         <p class="content-txt">
-                             result.des_bairro  -  result.des_cidade  /  result.des_estado 
+                            {{ result.dbairro }} - {{ result.dcidade }} / {{ result.duf }}
                         </p>
                     </td>
                 </tr>
@@ -72,12 +57,12 @@
                             <tr>
                                 <td class="content-columm1">
                                     <p class="content-cep">
-                                         result.des_cep 
+                                        {{ result.dcep }}
                                     </p>
                                 </td>
                                 <td class="content-columm2">
                                     <p class="content-code">
-                                         result.des_cep 
+                                        {{ result.dcep }}
                                     </p>
                                 </td>
                             </tr>
@@ -101,7 +86,7 @@
                                 </td>
                                 <td class="footer-columm2">
                                     <p class="footer-name">
-                                         result.rem_nome 
+                                        {{ result.rnome }}
                                     </p>
                                 </td>
                             </tr>
@@ -111,13 +96,13 @@
                 <tr>
                     <td>
                         <p class="footer-txt">
-                             result.des_cep  -  result.des_cep 
+                            {{ result.rrua }} - {{ result.rnum }}
                         </p>
                         <p class="footer-txt">
-                             result.des_cep 
+                            {{ result.rcom }}
                         </p>
                         <p class="footer-txt">
-                             result.des_cep  -  result.des_cep  /  result.des_cep  <strong> result.des_cep </strong>
+                            {{ result.rbairro }} - {{ result.rcidade }} / {{ result.duf }}<strong> {{ result.dcep }} </strong>
                         </p>
                     </td>
                 </tr>
@@ -131,7 +116,4 @@
         </td>
     </tr>
 </table>
-
-
-</body>
-</html>
+{% endblock %}

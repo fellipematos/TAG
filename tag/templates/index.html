@@ -1,0 +1,120 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form name="tag-dados" action="{{ url_for('tag') }}" method="post">
+
+    <div class="py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2">
+
+                <div class="col">
+
+                    <div class="p-2 bg-dark text-white"><h5>REMETENTE</h5></div>
+                    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+
+                        <div class="col-md-10">
+                            <label class="form-label">Nome</label>
+                            <input type="text" name="rnome" class="form-control">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="form-label">CEP</label>
+                                <input type="text" name="rcep" class="form-control" id="rcep">
+                            </div>
+                            <div class="col-md-9">
+                                <label class="form-label">Endereço</label>
+                                <input type="text" name="rrua" class="form-control" id="rrua">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="form-label">Numero</label>
+                                <input type="text" name="rnum" class="form-control" id="rnum">
+                            </div>
+                            <div class="col-md-8">
+                                <label class="form-label">Complemento</label>
+                                <input type="text" name="rcom" class="form-control" id="rcom">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="form-label">Bairro</label>
+                                <input type="text" name="rbairro" class="form-control" id="rbairro">
+                            </div>
+                            <div class="col-md-5">
+                                <label class="form-label">Cidade</label>
+                                <input type="text" name="rcidade" class="form-control" id="rcidade">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Estado</label>
+                                <input type="text" name="ruf" class="form-control" id="ruf">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="p-2 bg-dark text-white"><h5>DESTINATÁRIO</h5></div>
+                    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+
+                        <div class="col-md-10">
+                            <label class="form-label">Nome</label>
+                            <input type="text" name="dnome" class="form-control" id="dnome">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="form-label">CEP</label>
+                                <input type="text" name="dcep" class="form-control" id="dcep">
+                            </div>
+                            <div class="col-md-9">
+                                <label class="form-label">Endereço</label>
+                                <input type="text" name="drua" class="form-control" id="drua">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="form-label">Numero</label>
+                                <input type="text" name="dnum" class="form-control" id="dnum">
+                            </div>
+                            <div class="col-md-8">
+                                <label class="form-label">Complemento</label>
+                                <input type="text" name="dcom" class="form-control" id="dcom">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="form-label">Bairro</label>
+                                <input type="text" name="dbairro" class="form-control" id="dbairro">
+                            </div>
+                            <div class="col-md-5">
+                                <label class="form-label">Cidade</label>
+                                <input type="text" name="dcidade" class="form-control" id="dcidade">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Estado</label>
+                                <input type="text" name="duf" class="form-control" id="duf">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button class="btn btn-primary btn-lg" type="submit">GERAR TAG</button>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+{% endblock %}
